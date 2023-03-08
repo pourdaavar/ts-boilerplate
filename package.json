@@ -1,0 +1,43 @@
+{
+  "name": "ts-boilerplate",
+  "version": "1.0.0",
+  "description": "Starter boilerplate",
+  "author": "Hossein Pourdavar <h.pourdavar@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc --project ./tsconfig.build.json",
+    "lint": "eslint . --ext .ts --fix",
+    "lint:ci": "eslint . --ext .ts",
+    "test": "vitest --run --passWithNoTests",
+    "test:ci": "CI=true vitest --allowOnly",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage",
+    "type-check": "tsc --noEmit",
+
+    "prepare": ".husky/prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pourdaavar/ts-boilerplate.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pourdaavar/ts-boilerplate/issues"
+  },
+  "homepage": "https://github.com/pourdaavar/ts-boilerplate#readme",
+  "devDependencies": {
+    "@fullstacksjs/eslint-config": "9.1.1",
+    "@fullstacksjs/tsconfig": "1.0.0",
+    "cspell": "6.28.0",
+    "eslint": "8.35.0",
+    "husky": "8.0.0",
+    "lint-staged": "13.1.2",
+    "prettier": "2.8.4",
+    "shx": "0.3.4",
+    "typescript": "4.9.5",
+    "vitest": "0.29.2"
+  }
+}

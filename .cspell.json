@@ -1,0 +1,14 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["fullstacksjs", "Hossein", "Pourdavar"],
+  "ignoreWords": [],
+  "ignorePaths": [
+    "node_modules/**",
+    "endpoints/**",
+    "*coverage/**",
+    ".husky/**",
+    ".github/**",
+    "lib/**"
+  ]
+}

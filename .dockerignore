@@ -1,0 +1,11 @@
+./dist
+./docs
+.vscode
+./docker
+./node_modules
+.example.env
+.editorconfig
+.eslintrc.js
+tsconfig.eslint.json
+.prettierrc
+jest.config.ts
